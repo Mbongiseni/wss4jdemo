@@ -6,9 +6,9 @@
        xsi:schemaLocation="http://cxf.apache.org/core http://cxf.apache.org/schemas/core.xsd http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://cxf.apache.org/bindings/soap http://cxf.apache.org/schemas/configuration/soap.xsd http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 
     <!-- Webservice Endpoint configuration -->
-    <jaxws:server id="insureLifeService" serviceClass="za.co.insurelife.ws.InsureLifeService" address="/insure-life-services">
+    <jaxws:server id="calculatorService" serviceClass="za.co.fnb.ws.CalculatorFacade" address="/service">
         <jaxws:serviceBean>
-            <bean class="za.co.insurelife.ws.InsureLifeServiceImpl"/>
+            <bean class="za.co.fnb.ws.CalculatorImpl"/>
         </jaxws:serviceBean>
     </jaxws:server>
 

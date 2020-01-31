@@ -3,7 +3,7 @@
         "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <display-name>Insure Life Services</display-name>
+  <display-name>Calculator Service</display-name>
   <servlet>
     <servlet-name>cfx</servlet-name>
     <servlet-class>org.apache.cxf.transport.servlet.CXFServlet</servlet-class>
@@ -11,6 +11,6 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>cfx</servlet-name>
-    <url-pattern>/ws/*</url-pattern>
+    <url-pattern>/*</url-pattern>
   </servlet-mapping>
 </web-app>
